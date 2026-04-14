@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/svg+xml" href="files_new/logo.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The 2nd Workshop on Efficient Reasoning at COLM 2026">
+
+    <title>The 2nd Workshop on Efficient Reasoning</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./files_new/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./files_new/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./files_new/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./files_new/css" rel="stylesheet" type="text/css">
+    <link href="./files_new/css(1)" rel="stylesheet" type="text/css">
+    <link href="./files_new/css(2)" rel="stylesheet" type="text/css">
+    <link href="./files_new/css(3)" rel="stylesheet" type="text/css">
+    <link href="./files_new/css2" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-middle">
+                        <li class="hidden active">
+                            <a href="#page-top"></a>
+                        </li>
+
+                        <li>
+                            <a class="page-scroll" href="#" style="left: -150px; font-size:20px;">The 2nd Workshop on Efficient Reasoning</a>
+                        </li>
+                        <li>
+                            <a style="padding-left: 0px;"></a>
+                        </li>
+
+                        <li>
+                            <a class="page-scroll" href="#introduction">About</a>
+                        </li>
+
+                        <li>
+                            <a class="page-scroll" href="#call">Call for Papers</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#dates">Key Dates</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#speaker">Invited Speakers</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#organization">Organizers</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#previous">Previous Editions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <style>
+            header {
+                background-image: url(img/480711-Coronado-Ferry-Landing.webp);
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+            }
+
+            header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 1;
+            }
+
+            .container {
+                position: relative;
+                z-index: 2;
+            }
+
+            .intro-heading,
+            .intro-lead-in {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .intro-heading {
+                font-size: 3.5em;
+                font-weight: bold;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+
+            .intro-lead-in {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+
+            header {
+                padding: 0px 0 0px 0;
+            }
+
+            .buttons {
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 3;
+            }
+
+            .btn {
+                margin: 15px 5px;
+                padding: 12px 24px;
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.15);
+                border: 2px solid rgba(255, 255, 255, 0.8);
+                border-radius: 5px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: inline-block;
+                backdrop-filter: blur(5px);
+            }
+
+            .btn:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            section {
+                position: relative;
+                padding: 40px 0;
+                margin: 0;
+            }
+
+            section:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0%;
+                right: 0%;
+                height: 1px;
+                background: #e0e0e0;
+            }
+
+            .section-heading {
+                margin-bottom: 20px !important;
+            }
+
+            #introduction,
+            #call,
+            #dates,
+            #speaker,
+            #organization,
+            #previous {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        </style>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">
+                    <div>COLM 2026 Workshop on</div>
+                    <div>Efficient Reasoning</div>
+                    <div style="font-size: 0.5em; font-weight: 400; margin-top: 10px;">Data, Algorithms, Systems, and Applications</div>
+                </div>
+                <div class="intro-lead-in">October 9, 2026 &middot; Hybrid</div>
+                <div class="intro-lead-in">Contact: <a
+                    href="mailto:zefncai@gmail.com" style="color: white;">zefncai@gmail.com</a>, <a
+                    href="mailto:wdlctc@gmail.com" style="color: white;">wdlctc@gmail.com</a>, <a
+                    href="mailto:yijiangli@ucsd.edu" style="color: white;">yijiangli@ucsd.edu</a></div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br>
+
+    <!-- Introduction / About Section -->
+    <section id="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">About</h2>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <style>
+                    .overview-section {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 40px 20px;
+                    }
+
+                    .overview-section .intro-text {
+                        font-size: 1.1em;
+                        line-height: 1.8;
+                        color: #444;
+                        margin-bottom: 40px;
+                    }
+
+                    .overview-section .questions-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 30px;
+                        margin-top: 40px;
+                    }
+
+                    .overview-section .question-card {
+                        background: #f8f9fa;
+                        border-radius: 12px;
+                        padding: 25px;
+                        transition: transform 0.3s ease;
+                    }
+
+                    .overview-section .question-card:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .overview-section .question-title {
+                        color: #2c5282;
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                        border-bottom: 2px solid #4299e1;
+                        padding-bottom: 8px;
+                    }
+
+                    .overview-section .question-content {
+                        color: #4a5568;
+                        line-height: 1.6;
+                    }
+
+                    @media (max-width: 768px) {
+                        .overview-section .questions-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
+                <div class="overview-section">
+                    <div class="intro-text">
+                        Reasoning is rapidly moving beyond text-only benchmarks into multimodal, spatial, and embodied settings, where models must interpret long contexts, reason over visual scenes, plan actions, use tools, and interact with dynamic environments. This shift is especially visible in code agents, scientific assistants, embodied systems, and multimodal decision-making pipelines, where strong reasoning quality must now coexist with tight constraints on latency, memory, throughput, and serving cost. At the same time, many of the strongest gains in reasoning still come from more test-time compute, longer trajectories, or deeper search, which makes deployment substantially harder. The central question is therefore no longer only how to make models reason better, but how to make them reason efficiently, robustly, and at scale in the wild.
+                    </div>
+
+                    <div class="intro-text">
+                        Building on the success of the <a href="https://efficient-reasoning.github.io/">1st Workshop on Efficient Reasoning</a> at NeurIPS 2025 (1,000+ attendees, 275 submissions), this second edition at COLM 2026 will bring together researchers and practitioners working across data, algorithms, systems, and real-world applications to tackle the challenges of making reasoning practical under real-world constraints.
+                    </div>
+
+                    <h3 style="color: #2d3748; margin: 30px 0 20px;">Research Directions</h3>
+
+                    <div class="questions-grid">
+                        <div class="question-card">
+                            <div class="question-title">Datasets & Evaluation</div>
+                            <div class="question-content">
+                                Curating data and benchmarks for long-context reasoning, symbolic planning, spatial reasoning, embodied reasoning, multimodal reasoning, and other challenging settings under resource constraints.
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-title">Algorithms</div>
+                            <div class="question-content">
+                                Efficient supervised fine-tuning, reinforcement learning, distillation, pruning, compression, progressive generation, and search-based reasoning that improve efficiency without sacrificing accuracy, faithfulness, or robustness.
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-title">Systems</div>
+                            <div class="question-content">
+                                Efficient RL training stacks, long-context and multimodal inference engines, KV-cache and memory management, quantized execution, and other systems advances that make reasoning practical on limited hardware.
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-title">Safety</div>
+                            <div class="question-content">
+                                Adversarial robustness of efficient reasoning pipelines, including backdoor attacks on compressed or distilled reasoning traces, and alignment degradation under pruning and quantization.
+                            </div>
+                        </div>
+
+                        <div class="question-card" style="grid-column: 1 / -1;">
+                            <div class="question-title">Applications</div>
+                            <div class="question-content">
+                                Deploying reasoning models in domains such as healthcare, embodied agents, autonomous driving, scientific discovery, and other safety-critical settings where latency and cost matter.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers -->
+    <section id="call">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Call for Papers</h2>
+                    <div class="row text-justify">
+                        <div class="col-md-12">
+                            <p class="large text-muted">
+                                <b>The 2nd Workshop on Efficient Reasoning at COLM 2026</b> invites submissions from researchers working on making reasoning models faster, cheaper, and more efficient. We welcome contributions across data, algorithms, systems, safety, and applications, as well as interdisciplinary perspectives from the natural and social sciences.
+                            </p>
+
+                            <div style="font-family: system-ui, -apple-system, sans-serif;">
+                                <h1 style="font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 1.5rem; color: #2c5282; font-weight: 600;">Scope</h1>
+
+                                <p class="large text-muted">We welcome contributions across a broad spectrum of topics, including but not limited to:</p>
+
+                                <ul class="large text-muted" style="float:left; width: 100%">
+                                    <li>Pipelines for creating high-quality training data with resource constraints or deployment environments</li>
+                                    <li>Benchmark methodologies for assessing the efficiency and efficacy of reasoning models in real-world settings</li>
+                                    <li>Innovations in techniques for training reasoning models with a better trade-off between efficiency and performance</li>
+                                    <li>Approaches for accelerating inference through the design of algorithms and systems</li>
+                                    <li>Advancements in multimodal, spatial, and embodied reasoning under efficiency constraints</li>
+                                    <li>Theoretical analysis of the time and space complexity of reasoning models</li>
+                                    <li>Empirical investigations into the practical efficiency (latency, throughput, memory) of reasoning models</li>
+                                    <li>Efficient large-scale RL training systems and on-device inference engines</li>
+                                    <li>KV-cache compression and memory management for long-context reasoning</li>
+                                    <li>Safety and robustness of efficient reasoning pipelines</li>
+                                    <li>In-depth discussions exploring efficient deployments and applications of reasoning models</li>
+                                </ul>
+                            </div>
+
+                            <div style="font-family: system-ui, -apple-system, sans-serif;">
+                                <h1 style="font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 1.5rem; color: #2c5282; font-weight: 600;">Submission Guidelines</h1>
+                                <p class="large text-muted">
+                                    <mybold>Format:</mybold> &nbsp;All submissions must be a single PDF file in the COLM submission format, with <b>4&ndash;10 pages</b> of main text (references excluded). The main text must be self-contained. Reviewers are not required to read beyond the main text.
+                                </p>
+                                <p class="large text-muted">
+                                    <mybold>Submission Site:</mybold> &nbsp;Submit papers through <b>OpenReview</b>. The submission portal link will be announced soon.
+                                </p>
+                                <p class="large text-muted">
+                                    <mybold>Dual-submission and non-archival policy:</mybold> &nbsp;We welcome ongoing and unpublished work. We will also accept papers that are under review at the time of submission, or that have been recently accepted, provided they do not breach any dual-submission or anonymity policies of those venues. The workshop is a <b>non-archival</b> venue and will not have official proceedings.
+                                </p>
+                                <p class="large text-muted">
+                                    <mybold>Double-blind reviewing:</mybold> &nbsp;All submissions must be anonymized and may not contain any identifying information that may violate the double-blind reviewing policy. This policy applies to any supplementary or linked material as well, including code.
+                                </p>
+                                <p class="large text-muted">
+                                    <mybold>Contact:</mybold> &nbsp;For any questions, please contact us at
+                                    <a href="mailto:zefncai@gmail.com">zefncai@gmail.com</a> or
+                                    <a href="mailto:wdlctc@gmail.com">wdlctc@gmail.com</a>
+                                </p>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Dates -->
+    <section id="dates">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Key Dates</h2>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                    <style>
+                        .dates-table {
+                            width: 100%;
+                            max-width: 700px;
+                            margin: 20px auto;
+                            border-collapse: collapse;
+                        }
+
+                        .dates-table td {
+                            padding: 14px 20px;
+                            border-bottom: 1px solid #e2e8f0;
+                            font-size: 1.1em;
+                            color: #4a5568;
+                        }
+
+                        .dates-table td:first-child {
+                            font-weight: 600;
+                            color: #2d3748;
+                            width: 55%;
+                        }
+
+                        .dates-table tr:hover {
+                            background-color: #f7fafc;
+                        }
+                    </style>
+                    <table class="dates-table">
+                        <tbody>
+                            <tr>
+                                <td>Submission Deadline</td>
+                                <td>June 23, 2026 (AoE)</td>
+                            </tr>
+                            <tr>
+                                <td>Notification of Acceptance</td>
+                                <td>July 24, 2026 (AoE)</td>
+                            </tr>
+                            <tr>
+                                <td>Camera-ready Deadline</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>Workshop Day</td>
+                                <td><b>October 9, 2026</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="program">
+        <style>
+            #program {
+                color: #333;
+            }
+
+            #program .text-muted {
+                color: #666;
+                text-align: center;
+                font-style: italic;
+                margin: 1rem 0 2rem;
+            }
+
+            #program h3 {
+                color: #2c5282;
+                margin: 2rem 0 1rem;
+            }
+
+            #program .table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 1rem 0 2rem;
+            }
+
+            #program .table td {
+                padding: 12px 15px;
+                border: 1px solid #ddd;
+            }
+
+            #program .table tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+
+            #program .table td:first-child {
+                width: 140px;
+                font-weight: 500;
+                color: #2d3748;
+            }
+
+            #program .centered {
+                margin: 0 auto;
+            }
+        </style>
+        <div class="container">
+            <h2 class="section-heading">Tentative Schedule</h2>
+            <p class="text-muted">Full-day program with eight invited talks, three contributed talks, two poster sessions, and one panel discussion. Detailed schedule will be announced closer to the workshop date.</p>
+
+            <div id="schedule">
+                <h3>Morning Session</h3>
+                <div class="centered">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>08:45 - 09:00</td>
+                                <td>Opening Remarks</td>
+                            </tr>
+                            <tr>
+                                <td>09:00 - 09:30</td>
+                                <td>Invited Talk 1</td>
+                            </tr>
+                            <tr>
+                                <td>09:30 - 10:00</td>
+                                <td>Invited Talk 2</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 - 10:30</td>
+                                <td>Morning Break</td>
+                            </tr>
+                            <tr>
+                                <td>10:30 - 11:00</td>
+                                <td>Invited Talk 3</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 11:30</td>
+                                <td>Invited Talk 4</td>
+                            </tr>
+                            <tr>
+                                <td>11:30 - 12:00</td>
+                                <td>Contributed Talks</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 - 13:30</td>
+                                <td>Lunch Break & Poster Session 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Afternoon Session</h3>
+                <div class="centered">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>13:30 - 14:00</td>
+                                <td>Invited Talk 5</td>
+                            </tr>
+                            <tr>
+                                <td>14:00 - 14:30</td>
+                                <td>Invited Talk 6</td>
+                            </tr>
+                            <tr>
+                                <td>14:30 - 15:00</td>
+                                <td>Contributed Talks</td>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 15:30</td>
+                                <td>Afternoon Break</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:00</td>
+                                <td>Invited Talk 7</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 16:30</td>
+                                <td>Invited Talk 8</td>
+                            </tr>
+                            <tr>
+                                <td>16:30 - 17:15</td>
+                                <td>Panel Discussion</td>
+                            </tr>
+                            <tr>
+                                <td>17:15 - 18:00</td>
+                                <td>Poster Session 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Section -->
+    <section id="speaker">
+        <style>
+            #speaker .container,
+            #organization .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+
+            .speakers-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                width: 100%;
+                padding: 0 40px;
+            }
+
+            .speakers-grid .team-member {
+                text-align: center;
+            }
+
+            .speakers-grid .team-member img {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+
+            .organizers-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                width: 100%;
+                padding: 0 40px;
+            }
+
+            .organizers-grid .team-member {
+                text-align: center;
+            }
+
+            .organizers-grid .team-member img {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+
+            .img-circle {
+                border-radius: 50%;
+            }
+
+            #speaker .col-sm-2 {
+                width: auto;
+                padding: 0;
+            }
+            #organization .col-sm-2 {
+                width: auto;
+                padding: 0;
+            }
+
+            @media (max-width: 992px) {
+                .speakers-grid,
+                .organizers-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .speakers-grid,
+                .organizers-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            .speaker-topic {
+                font-size: 0.85em;
+                color: #718096;
+                font-style: italic;
+                margin-top: 4px;
+            }
+        </style>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Confirmed Invited Speakers</h2>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="speakers-grid">
+                <div class="team-member">
+                    <img src="./files_new/AC.jpeg" class="img-responsive img-circle">
+                    <a href="https://armancohan.com/">
+                        <h4>Arman Cohan</h4>
+                    </a>
+                    <p class="text-muted">Yale University</p>
+                    <p class="speaker-topic">Efficient test-time scaling for code reasoning (z1)</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/JG.jpg" class="img-responsive img-circle">
+                    <a href="https://jonasgeiping.github.io/">
+                        <h4>Jonas Geiping</h4>
+                    </a>
+                    <p class="text-muted">ELLIS Institute</p>
+                    <p class="speaker-topic">Scaling up latent reasoning: a recurrent depth approach</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/JH.jpg" class="img-responsive img-circle">
+                    <a href="https://junjiehu.github.io/">
+                        <h4>Junjie Hu</h4>
+                    </a>
+                    <p class="text-muted">University of Wisconsin</p>
+                    <p class="speaker-topic">Efficient reasoning with cache management</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/HJ.jpg" class="img-responsive img-circle">
+                    <a href="https://blender.cs.illinois.edu/hengji.html">
+                        <h4>Heng Ji</h4>
+                    </a>
+                    <p class="text-muted">UIUC</p>
+                    <p class="speaker-topic">Efficient reasoning in VLM and multimodal agents</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/SM.jpg" class="img-responsive img-circle">
+                    <a href="https://shmsw25.github.io/">
+                        <h4>Sewon Min</h4>
+                    </a>
+                    <p class="text-muted">UC Berkeley</p>
+                    <p class="speaker-topic">Efficient reasoning in agents</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/NM.png" class="img-responsive img-circle">
+                    <a href="https://muennighoff.github.io/">
+                        <h4>Niklas Muennighoff</h4>
+                    </a>
+                    <p class="text-muted">Stanford</p>
+                    <p class="speaker-topic">Efficient LRM training with simple test-time scaling (s1)</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/yuandong.png" class="img-responsive img-circle">
+                    <a href="https://yuandong-tian.com/">
+                        <h4>Yuandong Tian</h4>
+                    </a>
+                    <p class="text-muted">Stealth AI (ex-Meta)</p>
+                    <p class="speaker-topic">Efficient LLM reasoning, reinforcement learning</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/JW.jpg" class="img-responsive img-circle">
+                    <a href="https://jiajunwu.com/">
+                        <h4>Jiajun Wu</h4>
+                    </a>
+                    <p class="text-muted">Stanford</p>
+                    <p class="speaker-topic">Building efficient reasoning into the world model</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organization">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Workshop Organizers</h2>
+                </div>
+            </div>
+            <br><br>
+            <div class="organizers-grid">
+                <div class="team-member">
+                    <img src="./files_new/ZC.jpg" class="img-responsive img-circle">
+                    <a href="https://zefan-cai.github.io/">
+                        <h4>Zefan Cai</h4>
+                    </a>
+                    <p class="text-muted">UW&ndash;Madison</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/CL.jpg" class="img-responsive img-circle">
+                    <a href="https://wdlctc.github.io/">
+                        <h4>Cheng Luo</h4>
+                    </a>
+                    <p class="text-muted">Caltech / TikTok</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/YL.jpg" class="img-responsive img-circle">
+                    <a href="https://williamium3000.github.io/">
+                        <h4>Yijiang Li</h4>
+                    </a>
+                    <p class="text-muted">UC San Diego</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/WS.webp" class="img-responsive img-circle">
+                    <a href="https://weijiashi.notion.site/">
+                        <h4>Weijia Shi</h4>
+                    </a>
+                    <p class="text-muted">University of Washington</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/SY.png" class="img-responsive img-circle">
+                    <a href="https://sustcsonglin.github.io/">
+                        <h4>Songlin Yang</h4>
+                    </a>
+                    <p class="text-muted">MIT CSAIL</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/JZ.webp" class="img-responsive img-circle">
+                    <a href="https://jiaweizhao.com/">
+                        <h4>Jiawei Zhao</h4>
+                    </a>
+                    <p class="text-muted">Meta AI</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/ZD.jpg" class="img-responsive img-circle" onerror="this.style.background='#e2e8f0'">
+                    <a href="https://dong-zhen.com/">
+                        <h4>Zhen Dong</h4>
+                    </a>
+                    <p class="text-muted">UC Santa Barbara</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/HL.jpg" class="img-responsive img-circle">
+                    <a href="https://www.luor.org/">
+                        <h4>Haozheng Luo</h4>
+                    </a>
+                    <p class="text-muted">Northwestern University</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/ML.jpg" class="img-responsive img-circle">
+                    <a href="https://limanling.github.io/">
+                        <h4>Manling Li</h4>
+                    </a>
+                    <p class="text-muted">Northwestern University</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/ZL.jpg" class="img-responsive img-circle">
+                    <a href="https://zhijianliu.com/">
+                        <h4>Zhijian Liu</h4>
+                    </a>
+                    <p class="text-muted">UCSD</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/BC.jpeg" class="img-responsive img-circle">
+                    <a href="https://www.andrew.cmu.edu/user/beidic/">
+                        <h4>Beidi Chen</h4>
+                    </a>
+                    <p class="text-muted">Carnegie Mellon University</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="./files_new/JY.jpg" class="img-responsive img-circle">
+                    <a href="https://sherdencooper.github.io/">
+                        <h4>Jiahao Yu</h4>
+                    </a>
+                    <p class="text-muted">Northwestern University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Editions -->
+    <section id="previous">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Previous Editions</h2>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                    <style>
+                        .edition-card {
+                            background: #f8f9fa;
+                            border-radius: 12px;
+                            padding: 25px 30px;
+                            margin-bottom: 20px;
+                            transition: transform 0.3s ease;
+                        }
+
+                        .edition-card:hover {
+                            transform: translateY(-3px);
+                        }
+
+                        .edition-card h3 {
+                            color: #2c5282;
+                            margin-top: 0;
+                        }
+
+                        .edition-card p {
+                            color: #4a5568;
+                            line-height: 1.6;
+                            margin-bottom: 8px;
+                        }
+
+                        .edition-stats {
+                            display: flex;
+                            gap: 30px;
+                            margin-top: 15px;
+                            flex-wrap: wrap;
+                        }
+
+                        .edition-stat {
+                            text-align: center;
+                        }
+
+                        .edition-stat .num {
+                            font-size: 1.8em;
+                            font-weight: 700;
+                            color: #2c5282;
+                        }
+
+                        .edition-stat .label {
+                            font-size: 0.9em;
+                            color: #718096;
+                        }
+                    </style>
+
+                    <div class="edition-card">
+                        <h3><a href="https://efficient-reasoning.github.io/">1st Workshop on Efficient Reasoning @ NeurIPS 2025</a></h3>
+                        <p>December 6, 2025 &middot; San Diego, CA</p>
+                        <div class="edition-stats">
+                            <div class="edition-stat">
+                                <div class="num">1,000+</div>
+                                <div class="label">Attendees</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">275</div>
+                                <div class="label">Submissions</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">339</div>
+                                <div class="label">Reviewers</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">831</div>
+                                <div class="label">Reviews</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">16</div>
+                                <div class="label">Travel Grants</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edition-card">
+                        <h3>1st Workshop on Efficient Spatial Reasoning @ ICLR 2026</h3>
+                        <p>Companion edition</p>
+                        <div class="edition-stats">
+                            <div class="edition-stat">
+                                <div class="num">1,000+</div>
+                                <div class="label">Attendees</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">89</div>
+                                <div class="label">Submissions</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">141</div>
+                                <div class="label">Reviewers</div>
+                            </div>
+                            <div class="edition-stat">
+                                <div class="num">261</div>
+                                <div class="label">Reviews</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="./files_new/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./files_new/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./files_new/jquery.easing.min.js"></script>
+    <script src="./files_new/classie.js"></script>
+    <script src="./files_new/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="./files_new/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./files_new/agency.js"></script>
+
+</body>
+
+</html>
